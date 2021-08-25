@@ -49,7 +49,7 @@ class EthSyncLocalizations {
 
   String get ethTextIntro {
     return Intl.message(
-      '\n\n\nHello and welcome to ethereum sync. \nThis app aims to provide the information needed to successfully intall and then synchronise your computer with ethereum.',
+      '\n\n\n\n\n\nHello and welcome to ethereum sync. \nThis app aims to provide the information needed to successfully intall and then synchronise your computer with ethereum.',
       name: 'ethTextIntro',
       desc: 'into txt',
     );
