@@ -38,8 +38,8 @@ class ethSync extends StatelessWidget {
         // Try to match the languageCode, scriptCode, and countryCode with one in supportedLocales.
       ],
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+          // primarySwatch: Colors.blue,
+          ),
       home: MyHomePage(), //title: 'Flutter Lingo App'),
     );
   }
