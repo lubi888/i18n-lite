@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import './ethsync_localizations.dart';
+// import './ethsync_scrollbars.dart';
 
 // import 'package:flutter_gen/app_localizations.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -40,31 +41,83 @@ class ethSync extends StatelessWidget {
       theme: ThemeData(
           // primarySwatch: Colors.blue,
           ),
-      home: MyHomePage(), //title: 'Flutter Lingo App'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      // child: Text(EthSyncLocalizations.of(context).title),
-      child: Text(
-        // EthSyncLocalizations.of(context).ethTextFonts,
-        EthSyncLocalizations.of(context).ethTextIntro,
-        textAlign: TextAlign.center,
-        textDirection: TextDirection.ltr,
-        // textHeightBehavior: TextHeightBehavior,
-        style: TextStyle(
-          color: Colors.blueAccent,
-          fontStyle: FontStyle.normal,
-          fontSize: 20.0,
-        ),
+      // home: MyHomePage(), //title: 'Flutter Lingo App'),
+      home: DefaultTabController(
+        length: 4,
+        child: Scaffold(
+            // home: Scaffold(
+            // appBar: AppBarPage(),
+            // drawer: EthSyncNavDrawer(),
+            // bottomNavigationBar: NavigationBarPage(),
+            // body: EthSyncScrollbars(),
+            // body: Column(
+            //   crossAxisAlignment: CrossAxisAlignment.center,
+            //   mainAxisSize: MainAxisSize.min,
+            //   children: <Widget>[
+            //     RaisedButton(
+            //         child: const Text('SHOW BANNER'),
+            //         onPressed: () {
+            //           _bannerAd ??= createBannerAd();
+            //           _bannerAd
+            //             ..load()
+            //             ..show();
+            //         }),
+            //     RaisedButton(
+            //         child: const Text('SHOW BANNER WITH OFFSET'),
+            //         onPressed: () {
+            //           _bannerAd ??= createBannerAd();
+            //           _bannerAd
+            //             ..load()
+            //             ..show(horizontalCenterOffset: -50, anchorOffset: 100);
+            //         }),
+            //     RaisedButton(
+            //         child: const Text('REMOVE BANNER'),
+            //         onPressed: () {
+            //           _bannerAd?.dispose();
+            //           _bannerAd = null;
+            //         }),
+            //     RaisedButton(
+            //       child: const Text('LOAD INTERSTITIAL'),
+            //       onPressed: () {
+            //         _interstitialAd?.dispose();
+            //         _interstitialAd = createInterstitialAd()..load();
+            //       },
+            //     ),
+            //     RaisedButton(
+            //       child: const Text('SHOW INTERSTITIAL'),
+            //       onPressed: () {
+            //         _interstitialAd?.show();
+            //       },
+            //     ),
+            //   ],
+            // ),
+            ),
       ),
     );
   }
 }
+
+// class MyHomePage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       //Container   to Material App?
+//       // child: Text(EthSyncLocalizations.of(context).title),
+//       child: Text(
+//         // EthSyncLocalizations.of(context).ethTextFonts,
+//         EthSyncLocalizations.of(context).ethTextIntro,
+//         textAlign: TextAlign.center,
+//         textDirection: TextDirection.ltr,
+//         // textHeightBehavior: TextHeightBehavior,
+//         style: TextStyle(
+//           color: Colors.blueAccent,
+//           fontStyle: FontStyle.normal,
+//           fontSize: 20.0,
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 // flutter pub run intl_translation:extract_to_arb --output-dir=lib/l10n lib/main.dart
 // flutter pub run intl_translation:extract_to_arb --output-dir=lib/l10n lib/ethsync_EthSyncLocalizations.dart
