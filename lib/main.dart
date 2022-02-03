@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import './ethsync_localizations.dart';
 // import './ethsync_scrollbars.dart';
+import './ethsync_appbar.dart';
 
 // import 'package:flutter_gen/app_localizations.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -45,53 +46,53 @@ class ethSync extends StatelessWidget {
       home: DefaultTabController(
         length: 4,
         child: Scaffold(
-            // home: Scaffold(
-            // appBar: AppBarPage(),
-            // drawer: EthSyncNavDrawer(),
-            // bottomNavigationBar: NavigationBarPage(),
-            // body: EthSyncScrollbars(),
-            // body: Column(
-            //   crossAxisAlignment: CrossAxisAlignment.center,
-            //   mainAxisSize: MainAxisSize.min,
-            //   children: <Widget>[
-            //     RaisedButton(
-            //         child: const Text('SHOW BANNER'),
-            //         onPressed: () {
-            //           _bannerAd ??= createBannerAd();
-            //           _bannerAd
-            //             ..load()
-            //             ..show();
-            //         }),
-            //     RaisedButton(
-            //         child: const Text('SHOW BANNER WITH OFFSET'),
-            //         onPressed: () {
-            //           _bannerAd ??= createBannerAd();
-            //           _bannerAd
-            //             ..load()
-            //             ..show(horizontalCenterOffset: -50, anchorOffset: 100);
-            //         }),
-            //     RaisedButton(
-            //         child: const Text('REMOVE BANNER'),
-            //         onPressed: () {
-            //           _bannerAd?.dispose();
-            //           _bannerAd = null;
-            //         }),
-            //     RaisedButton(
-            //       child: const Text('LOAD INTERSTITIAL'),
-            //       onPressed: () {
-            //         _interstitialAd?.dispose();
-            //         _interstitialAd = createInterstitialAd()..load();
-            //       },
-            //     ),
-            //     RaisedButton(
-            //       child: const Text('SHOW INTERSTITIAL'),
-            //       onPressed: () {
-            //         _interstitialAd?.show();
-            //       },
-            //     ),
-            //   ],
-            // ),
-            ),
+          // home: Scaffold(
+          appBar: AppBarPage(),
+          // drawer: EthSyncNavDrawer(),
+          // bottomNavigationBar: NavigationBarPage(),
+          // body: EthSyncScrollbars(),
+          // body: Column(
+          //   crossAxisAlignment: CrossAxisAlignment.center,
+          //   mainAxisSize: MainAxisSize.min,
+          //   children: <Widget>[
+          //     RaisedButton(
+          //         child: const Text('SHOW BANNER'),
+          //         onPressed: () {
+          //           _bannerAd ??= createBannerAd();
+          //           _bannerAd
+          //             ..load()
+          //             ..show();
+          //         }),
+          //     RaisedButton(
+          //         child: const Text('SHOW BANNER WITH OFFSET'),
+          //         onPressed: () {
+          //           _bannerAd ??= createBannerAd();
+          //           _bannerAd
+          //             ..load()
+          //             ..show(horizontalCenterOffset: -50, anchorOffset: 100);
+          //         }),
+          //     RaisedButton(
+          //         child: const Text('REMOVE BANNER'),
+          //         onPressed: () {
+          //           _bannerAd?.dispose();
+          //           _bannerAd = null;
+          //         }),
+          //     RaisedButton(
+          //       child: const Text('LOAD INTERSTITIAL'),
+          //       onPressed: () {
+          //         _interstitialAd?.dispose();
+          //         _interstitialAd = createInterstitialAd()..load();
+          //       },
+          //     ),
+          //     RaisedButton(
+          //       child: const Text('SHOW INTERSTITIAL'),
+          //       onPressed: () {
+          //         _interstitialAd?.show();
+          //       },
+          //     ),
+          //   ],
+          // ),
+        ),
       ),
     );
   }
