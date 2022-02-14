@@ -23,10 +23,10 @@ class AppBarPage extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       title: Text(EthSyncLocalizations.of(context).title),
       bottom: TabBar(tabs: [
-        Tab(icon: Icon(Icons.info, color: Colors.redAccent)),
+        Tab(icon: Icon(Icons.block, color: Colors.redAccent)),
+        Tab(icon: Icon(Icons.school, color: Colors.yellowAccent)),
+        Tab(icon: Icon(Icons.laptop, color: Colors.greenAccent)),
         Tab(icon: Icon(Icons.attach_money, color: Colors.amberAccent)),
-        Tab(icon: Icon(Icons.laptop, color: Colors.blueAccent)),
-        Tab(icon: Icon(Icons.school, color: Colors.redAccent)),
       ]),
       actions: <Widget>[
         // Icon(Icons.rotate_90_degrees_ccw),
