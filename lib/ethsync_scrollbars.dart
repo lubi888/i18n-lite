@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import './ethsync_scrollbar1.dart';
-// import './ethsync_scrollbar2.dart';
+import './ethsync_scrollbar2.dart';
 // import './ethsync_scrollbar3.dart';
 // import './ethsync_scrollbar4.dart';
 
@@ -15,8 +15,8 @@ class EthSyncScrollbars extends StatelessWidget {
         //     /////////////////Tab 1
         // Scrollbar1(),
         // //     /////////////////Tab 2
-        // Scrollbar2(),
-        // //     /////////////////Tab 3
+        Scrollbar2(),
+        //     /////////////////Tab 3
         // Scrollbar3(),
         // //     /////////////////Tab 4
         // Scrollbar4(),
